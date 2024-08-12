@@ -1,0 +1,14 @@
+﻿@page "/GoogleIndexing"
+<h3>Google Indexing</h3>
+
+<label class="form-label mb-3">Json String Content</label>
+<Textarea PlaceHolder="@jsonFilePlaceHolder" rows="13" @bind-Value="jsonKeyContent" />
+
+
+<label class="form-label mb-3">All web page url</label>
+<Textarea PlaceHolder="@uriDataplaceholder" rows="5" @bind-Value="uriData" />
+
+<div class="col-12">
+    <Button IsBlock="true" Color="Color.Primary" @onclick="ExecuteCommand">Run Code</Button>
+</div>
+<Console Items="@logs" Height="126" IsAutoScroll="true" />
