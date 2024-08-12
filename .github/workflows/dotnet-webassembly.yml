@@ -16,7 +16,7 @@ jobs:
         dotnet-version: 8.0.x
         
     - name: Publish .NET Core Project
-      run: dotnet publish BlazorBootstrap/OnlineHttpClinet.WebAssembly.csproj -c Release -o release --nologo
+      run: dotnet publish OnlineHttpClinet.WebAssembly/OnlineHttpClinet.WebAssembly.csproj -c Release -o release --nologo
     
  
     - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
